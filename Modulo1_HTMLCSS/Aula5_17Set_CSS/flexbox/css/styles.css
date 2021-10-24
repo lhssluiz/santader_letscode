@@ -1,0 +1,20 @@
+#container {
+    background-color: #345B63;
+    padding: 10px;
+    display: flex;
+  /*   flex-direction: column-reverse; */
+  /*   flex-direction: column; */
+    align-items: stretch;
+    height: 500px;
+  /*   width: 5000px; */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    background-color: #FFDAC7;
+    padding: 20px;
+  /*   flex: 1; */
+    border: 1px solid;
+    width: 20px;
+  }
