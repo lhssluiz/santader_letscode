@@ -1,0 +1,23 @@
+.top-container {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position:absolute;
+}
+
+.middle-container {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    right: 40px;
+
+}
+
+.bottom-container {
+    height: 200px;
+    width: 200px;
+    background-color:yellow;
+    position: absolute;
+    left: 30px;
+}
