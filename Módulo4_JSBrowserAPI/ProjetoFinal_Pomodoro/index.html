@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa" type="text/css">
+  
+</head>
+<body>
+    <div class="main-header">
+        <img id="imagem-fundo-init" src="images/background.jpg" alt="cronometro">
+      <h1 id="top-text1">Pomodoro</h1>
+    </div>
+
+    <div class="main-header">
+        <img id="imagem-fundo-end" src="images/alarm-clock.jpg" alt="cronometro" hidden>
+        <h1 id="top-text2" hidden>Tempo de foco</h1>
+
+    </div>
+
+    <div id="description">
+      <p id='description-p'>A técnica Pomodoro vem de lá dos anos 1980. Desenvolvida por Francesco Cirillo, o método é cíclico e consiste em separar as tarefas em pequenos intervalos de tempo que podem ser chamados de “Pomodoros”. Acessando <a href="https://francescocirillo.com/pages/pomodoro-technique">o site original</a> do criador da técnica, você obterá mais informações.
+      </p>
+
+      <p>Clicando em um dos números abaixo, você escolhe um intervalo de tempo que comecará a decrescer até zerar. Esse será o seu intervalo de foco</p>
+    </div>
+    
+  <div id="countdown-container"></div>
+
+  <div id="cancel-container" hidden> 
+    <button id="cancel-button">Reiniciar</button>
+  </div>
+
+  <div id="video-container">
+  </div>
+  
+  <div id="selection-container">
+    <p id="instruction">Selecione o intervalo de foco:</p>
+
+    <div id="time-buttons-container">
+      <button class="minute-button set-time" id="10">10</button>
+      <button class="minute-button set-time" id="15">15</button>
+      <button class="minute-button set-time" id="25">25</button>
+      <button class="minute-button set-time" id="45">45</button>
+    </div>
+  </div>
+      
+  <h2 class="take-break set-time" id="descansar" hidden>Tire 5 minutos de descanso</h2>
+
+  <script src="index.js"></script>
+</body>
+</html>
