@@ -1,0 +1,9 @@
+h1 {
+    color: blue;
+    background-color: violet;
+}
+
+.white-text {
+    background-color: blue;
+    color: white;
+}

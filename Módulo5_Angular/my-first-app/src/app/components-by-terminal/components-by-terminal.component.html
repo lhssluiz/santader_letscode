@@ -1,0 +1,29 @@
+<!-- <h1 class="teste">Fulaninho Glauberio!!</h1> -->
+
+<button class="btn btn-primary" [disabled]="!permitirAdicaoServidor" (click)="onCreateServer()">Adicionar Servidor</button>
+ {{ permitirAdicaoServidor }}
+<p [innerText]="permitirAdicaoServidor"></p>
+
+
+
+ {{ statusAdicaoServidor }}
+ 
+<p *ngif="serverCreated; else noServer"> Servidor foi criado</p>
+
+<!-- *ngif é a diretiva acima
+ela vai lá no arquivo .ts ver se serverCreated vira true
+e nesse momento o elemento é adicionado no DOM-->
+
+<ng-template #noServer>
+    <p>Nenhum servidor foi criado</p>
+</ng-template>
+
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+
+{{ serverName }}
+
+<input type="text" class="form-control" [(ngModel)]="serverName">
+
+<div *ngFor="let server of servers">
+    {{ server }}
+</div>
