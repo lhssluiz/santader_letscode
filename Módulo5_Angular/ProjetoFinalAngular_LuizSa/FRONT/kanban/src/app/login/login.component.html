@@ -1,0 +1,19 @@
+<div class="col-md-12">
+    <div class="card card-container">
+    <form [formGroup]="form" name="form">
+        <div class=form-group>
+            <label for="login">Login</label>
+            <input formControlName="username" type="text" class="form-control" name="login"/>
+        </div>
+
+        <div class=form-group>
+            <label for="password">Password</label>
+            <input formControlName="password" type="password" class="form-control" name="password"/>
+        </div>
+
+        <div>
+            <button class="btn btn-primary" (click)="login()"> Log in</button>
+        </div>
+    </form>
+    
+</div>

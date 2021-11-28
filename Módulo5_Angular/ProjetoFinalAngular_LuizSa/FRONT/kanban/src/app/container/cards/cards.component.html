@@ -1,0 +1,16 @@
+<body>
+    <div class="items border border-light">
+        <div class="card draggable shadow-sm" id="cd1" draggable="true" ondragstart="drag(event)">
+            <div class="card-body p-2">
+                <div class="card-title">
+                    <a href="" class="lead font-weight-light">Título</a>
+                </div>
+                <p> This is a task that is being worked on. </p>
+                <button class="btn btn-secondary btn-sm mr-3">Move left</button>
+                <button class="btn btn-primary btn-sm">View</button>
+                <button class="btn btn-danger btn-sm ml-3">Delete</button>
+                <button class="btn btn-secondary btn-sm ml-3" (click)="moveRight()">Move right</button>
+            </div>
+        </div>                           
+    </div>
+</body>
